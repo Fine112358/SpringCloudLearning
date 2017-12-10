@@ -35,6 +35,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.infiniteautomation</groupId>
+			<artifactId>modbus4j</artifactId>
+			<version>3.0.3</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -66,6 +72,18 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+		</repository>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>ignore</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>modbus-data-source</id>
+			<name>Modbus Dependencies</name>
+			<url>https://maven.mangoautomation.net/repository/ias-release/</url>
 		</repository>
 	</repositories>
 
